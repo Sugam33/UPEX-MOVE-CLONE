@@ -1,0 +1,578 @@
+* {
+    font-family: "Inter", sans-serif;
+  }
+
+  .same-btncolor {
+    background-color: #0A808C !important;
+    border-color: transparent !important;
+    border-radius: 0px !important;
+  }
+  
+  span {
+    color: darkcyan;
+  }
+  
+  .nav-header span {
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .top {
+    background-color: #eae9e9;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  
+  .top-text {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .top-text p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .top-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+  }
+
+  /* navbar css  */
+  
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    margin-top: -18px;
+  }
+
+  .nav-header .lists {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-header .lists li {
+    list-style: none;
+  }
+  
+  .nav-header h2 {
+    font-family: "Roboto Slab", serif;
+    line-height: 18px;
+  }
+  
+  .nav-header .nav-btn {
+    color: white;
+    margin-bottom: 28px;
+    padding: 24px;
+  }
+  
+  .nav-header .nav-btn .my-nav-btn {
+    padding: 14px;
+  }
+
+  /* hero section css  */
+  .hero {
+    background-image: url('../assets/warehouse.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px;
+    position: relative;
+  }
+  
+  .hero::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1; 
+  }
+  
+  .hero-content {
+    margin-top: 80px;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  .hero-content h1 {
+    font-weight: 600;
+  }
+  
+  .hero-content p {
+    position: relative; 
+    z-index: 2;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; 
+    z-index: 2;
+  }
+  
+  .discover-btn {
+    padding: 12px;
+  }
+  
+  .hero .top-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 2; 
+  }
+  
+  .hero-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hero-top .hero-top-text {
+    color: #ccc;
+  }
+  
+  .hero-top .hero-top-icon {
+    font-size: 18px;
+  }
+  
+  .hero-top .hero-top-details p {
+    margin-bottom: 0;
+  }
+  
+  .hero-top .num {
+    line-height: 1;
+    position: relative;
+    left: 8px;
+  }
+  
+  /* features css */
+
+  .features {
+   margin-top: 60px;
+  }
+
+  .features-heading h2 {
+    text-align: center;
+    color: #0A808C;
+  }
+
+  .features-icon-text {
+    margin-top: 30px;
+  }
+
+  .features-icon-text .features-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #0A808C;
+  }
+
+  .features-icon-text .features-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* about css */
+
+  .about {
+    margin-top: 20px;
+    background-image: url('../assets/cement1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+  }
+
+  .about-top .about-upex {
+    color: #5e8781;
+    font-weight: 600;
+  }
+
+  .about-top h2 {
+    font-weight: 600;
+  }
+
+  .about-top h6 {
+    margin-top: 24px;
+  }
+
+  .about-top .about-top-bottomtext {
+    margin-top: 24px;
+  }
+
+  .about-middle {
+    display: flex;
+    gap: 170px;
+    margin-top: 32px;
+  }
+
+  .about-middle .fas {
+    color: forestgreen;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+
+  .about-bottom {
+    display: flex;
+    align-items: center;
+   gap: 100px;
+   margin-top: -10px;
+  }
+
+  .about-bottom-text {
+    margin-top: 24px;
+  }
+
+  .about-bottom-text .about-bottom-text-num {
+    color: green;
+    font-weight: bold;
+  }
+
+  .about-bottom-text .about-bottom-text-quote {
+    font-size: 14px;
+    color: black;
+    margin-top: -10px;
+    margin-left: 4px;
+  }
+
+  /* services css  */
+
+  .services {
+    margin-top: 18px;
+    padding: 32px;
+  }
+
+  .services .services-text {
+    text-align: center;
+  }
+
+  .services-text .services-text-p {
+    color: #5e8781;
+  }
+
+  .services-card {
+    padding: 18px;
+  }
+
+  .services-card .card {
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .services-card .services-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .services-body .services-body-heading{
+    color: #0A808C;
+    font-size: 14px;
+  }
+
+  .services-body .services-body-heading h4{
+    font-size: 18px;
+  }
+
+  .services-body .services-body-text{
+    text-align: center;
+  }
+
+
+  .services-body-icon .fas {
+    font-size: 32px;
+    color: #0A808C;
+  }
+
+  .services-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  /* form  */
+
+  .my-form {
+  background-image: url('../assets/warehousetruck.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 520px;
+  margin-top: 24px;
+  position: relative;
+  }
+
+  .my-form .form-body {
+    margin-top: 50px;
+    width: 500px;
+  }
+
+  .form-body-head {
+    background-color: #0A808C;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-body-head p {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .my-form .form-body-contents{
+    background-color: white;
+    padding: 24px;
+  }
+
+  .form-body-contents .form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-body-contents .form-partition {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-left: -40px; */
+    gap: 50px;
+  }
+
+  .form-partition .form-partition-left {
+    margin-left: -24px;
+  }
+
+  /* testimonials css  */
+  .testimonials {
+  background-image: url('../assets/textured.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 520px;
+  margin-top: 0px;
+  }
+
+  .testimonials-card .testimonials-first {
+    background-color: #0A808C;
+    color: white;
+    padding: 24px;
+  }
+
+  .testimonials-card .testimonials-second {
+    background-color: black;
+    color: white;
+    padding: 24px;
+  }
+
+  .testimonials-card .testimonials-third {
+    background-color: #0A808C;
+    color: white;
+  }
+
+  .star .fa {
+    color: yellow;
+  }
+
+  .testimonials-card .testimonials-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials-layout .testimonalslayout-bottomtext {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testimonalslayout-bottomtext .testimonalslayout-bottomtext-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%; 
+    background-color: green; 
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 14px;
+  }
+
+  .circle-second {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%; 
+    background-color: orange; 
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 14px;
+  }
+
+  .testimonalslayout-chaticon .fa-solid {
+    font-size: 24px;
+  }
+
+
+  /* projects css  */
+.projects{
+    margin-top: 54px;
+  }
+.bg-color {
+  background-color: #0A808C; 
+}
+
+.card-spacing {
+  padding: 22px;
+}
+
+.card-spacing p {
+  color: white;
+}
+
+.card-spacing h1 {
+  color: white;
+}
+
+/* questions css  */
+.questions {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #007b8a;
+}
+
+.questions h2 {
+  color: white;
+}
+
+.questions p {
+  color: white;
+  margin-top: 18px;
+}
+
+.questions-text {
+  margin-top: 12px;
+}
+
+
+.questions-flex {
+  display: flex;
+  align-items: center;
+}
+
+.questions .questions-btn {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 0px;
+}
+
+/* footer css  */
+
+.footer {
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.footer-header {
+  margin-bottom: 14px;
+}
+
+.footer-header h5{
+  color: #007b8a;
+}
+
+.about-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.about-icons .icons-container{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icons .facebook {
+  background-color: #1974F0;
+}
+
+.about-icons .instagram {
+  background-color: #F06846;
+}
+
+.about-icons .twitter {
+  background-color: #76DBF4;
+}
+
+.about-icons .icons-container .fab{
+  color: white;
+}
+
+.footer-lists ul {
+  list-style: none;
+  margin-left: -30px;
+}
+
+.footer-lists ul li{
+  margin-bottom: 8px;
+}
+
+.footer-map {
+  margin-top: 12px;
+}
+
+.footer-header .touch-texts {
+  margin-top: 16px;
+}
+
+.footer-blackline {
+  border: 1px solid black;
+  height: 2px;
+  margin-top: 20px;
+}
+
+.copyright {
+  margin-top: 18px;
+}
+
+.copyright p {
+  font-family: "Roboto Condensed", sans-serif;
+}

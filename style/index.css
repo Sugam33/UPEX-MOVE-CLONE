@@ -7,6 +7,12 @@
     border-color: transparent !important;
     border-radius: 0px !important;
   }
+
+  .light-btncolor {
+    background-color: #429aa0 !important;
+    border-color: transparent !important;
+    border-radius: 0px !important;
+  }
   
   span {
     color: darkcyan;
@@ -182,7 +188,7 @@
 
   .features-heading h2 {
     text-align: center;
-    color: #0A808C;
+    color: #59b3b9;
   }
 
   .features-icon-text {
@@ -192,7 +198,7 @@
   .features-icon-text .features-icon {
     font-size: 32px;
     margin-bottom: 12px;
-    color: #0A808C;
+    color: #59b3b9;
   }
 
   .features-icon-text .features-flex {
@@ -276,7 +282,7 @@
   }
 
   .services-text .services-text-p {
-    color: #5e8781;
+    color: #429aa0;
   }
 
   .services-card {
@@ -296,7 +302,7 @@
   }
 
   .services-body .services-body-heading{
-    color: #0A808C;
+    color: #429aa0;
     font-size: 14px;
   }
 
@@ -311,7 +317,7 @@
 
   .services-body-icon .fas {
     font-size: 32px;
-    color: #0A808C;
+    color: #429aa0;
   }
 
   .services-button {
@@ -458,20 +464,26 @@
 .projects{
     margin-top: 54px;
   }
+
 .bg-color {
   background-color: #0A808C; 
 }
 
-.card-spacing {
-  padding: 22px;
+.projects-text {
+  height: 270px;
+  width: 520px;
+  background-color: #0A808C; 
+  padding: 32px;
 }
 
-.card-spacing p {
+.projects-text p {
   color: white;
 }
 
-.card-spacing h1 {
+.projects-text h1 {
   color: white;
+  font-weight: 600;
+  font-size: 42px;
 }
 
 /* questions css  */
@@ -524,6 +536,8 @@
 .about-icons {
   display: flex;
   gap: 14px;
+  padding-top: 14px;
+  
 }
 
 .about-icons .icons-container{
@@ -555,16 +569,18 @@
   margin-left: -30px;
 }
 
+.footer-lists-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .footer-lists ul li{
   margin-bottom: 8px;
 }
 
 .footer-map {
   margin-top: 12px;
-}
-
-.footer-header .touch-texts {
-  margin-top: 16px;
 }
 
 .footer-blackline {
@@ -579,4 +595,135 @@
 
 .copyright p {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+
+/* Responsiveness  */
+@media only screen and (max-width: 768px) {
+  
+  .hero {
+    padding: 80px 20px;
+    background-position: center;
+  }
+
+  /*  Hero Section Heading */
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Features Section */
+  .features-heading h2 {
+    font-size: 22px;
+  }
+
+  .features-icon-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* About Section */
+  .about-middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Services Section */
+  .services-card {
+    margin-bottom: 20px;
+  }
+
+  /* Form Section */
+  .my-form {
+    height: auto;
+    padding: 40px 10px;
+  }
+  .form-body {
+    width: 100%;
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Footer Section */
+  .footer {
+    padding: 24px 10px;
+  }
+
+  .about-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Navbar Section */
+  .nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-header .lists {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-logo h2 {
+    margin-top: 0;
+  }
+
+  /* Adjust Button  */
+  .services-button button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* projects Section */
+  .projects-text {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .projects-text h1 {
+    font-size: 28px;
+  }
+
+  .projects-text p {
+    font-size: 16px;
+  }
+
+  .projects-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projects .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects .col-md-5,
+  .projects .col-md-4,
+  .projects .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
 }

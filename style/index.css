@@ -307,7 +307,7 @@
   }
 
   .services-body .services-body-heading h4{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .services-body .services-body-text{
@@ -652,8 +652,26 @@
     height: auto;
     padding: 40px 10px;
   }
+
   .form-body {
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; 
+  }
+
+  .form-body-contents {
+    padding: 24px;
+  }
+
+  .form-partition {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .form-partition .form-partition-left,
+  .form-partition .form-partition-right {
+    width: 100%; 
+    margin-left: -44px; 
   }
 
   /* Testimonials Section */
@@ -725,5 +743,90 @@
     width: 100%;
     margin-bottom: 20px;
   }
+}
 
+@media only screen and (max-width: 1024px) {
+
+  /* --- Navbar --- */
+  .nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-header .lists {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-logo h2 {
+    margin-top: 0;
+  }
+
+  /* --- Hero Section --- */
+  .hero {
+    padding: 80px 20px;
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* --- Features Section --- */
+  .features-heading h2 {
+    font-size: 24px;
+  }
+
+  .features-icon-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* --- About Section --- */
+  .about-middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* --- Services Section --- */
+  .services-card {
+    margin-bottom: 20px;
+  }
+
+  /* --- Form Section --- */
+  .my-form {
+    height: auto;
+    padding: 40px 10px;
+  }
+
+  .form-body {
+    width: 100%;
+  }
+
+  /* --- Testimonials Section --- */
+  .testimonials {
+    height: auto;
+    padding: 20px;
+  }
+
+  /* --- Footer Section --- */
+  .footer {
+    padding: 24px 10px;
+  }
+
+  .about-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

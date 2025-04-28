@@ -56,7 +56,11 @@
   }
   
   .nav-logo {
-    margin-top: -18px;
+    margin-top: -25px;
+  }
+
+  .nav-logo h2{
+    margin-top: -32px;
   }
 
   .nav-header .lists {
